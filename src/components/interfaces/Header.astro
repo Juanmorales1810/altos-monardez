@@ -1,0 +1,85 @@
+---
+import { Phone } from "lucide-react";
+import { SheetMenu } from "../sheet-menu";
+import { Button } from "../ui/button";
+
+const routes = [
+    { name: "Home", href: "/#hero" },
+    { name: "Quienes somos", href: "/#Descriptions" },
+    { name: "Servicios", href: "/#Service" },
+    { name: "Misión y visión", href: "/#WhyUs" },
+    { name: "Contáctenos", href: "/#Reserva" },
+];
+---
+
+<header class="fixed w-full bg-[#2c2c34] z-50">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+            <div class="md:flex md:items-center md:gap-12">
+                <a class="block text-zinc-600" href="/">
+                    <span class="sr-only">Home</span>
+                    <img
+                        src="/logo.png"
+                        alt="Logo de Oakland Services"
+                        class="h-12"
+                    />
+                </a>
+            </div>
+
+            <div class="hidden md:block">
+                <nav aria-label="Global">
+                    <ul class="flex items-center gap-6 text-sm">
+                        {
+                            routes.map((route) => (
+                                <li>
+                                    <a href={route.href}>{route.name}</a>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="sm:flex sm:gap-4">
+                    <a
+                        class="inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium text-white border [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none hover:bg-black hover:border-black hover:text-[#f0ba56] transition duration-500"
+                        target="_blank"
+                        href="https://api.whatsapp.com/send?phone=56997364529&text=Hola%20quiero%20hacer%20una%20reserva.%20Que%20dias%20tenes%20disponibles%3F"
+                    >
+                        Consulte ahora
+                        <Phone className="ml-2 h-4 w-4" />
+                    </a>
+                </div>
+
+                <div class="block md:hidden">
+                    <SheetMenu client:visible />
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<style>
+    @reference "tailwindcss";
+    header {
+        animation: nav-shadown 1s linear both;
+        animation-timeline: scroll();
+        animation-range: 0 100px;
+    }
+
+    header {
+        @apply bg-blue-50/90 text-black;
+    }
+    @keyframes nav-shadown {
+        0% {
+            background-color: transparent;
+            color: white;
+        }
+        to {
+            box-shadow:
+                0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+        }
+    }
+</style>
