@@ -1,0 +1,240 @@
+---
+import { Car, Croissant, VideoIcon, Volume2 } from "lucide-react";
+---
+
+<section class="relative overflow-hidden py-24 md:py-32">
+    <div
+        class="absolute bottom-auto -z-10 left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[60%] translate-y-[25%] rounded-full bg-[rgb(235,103,63)] opacity-50 blur-[80px]"
+    >
+    </div>
+    <div class="container mx-auto px-2">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+            <div class="space-y-8">
+                <h2
+                    class="text-5xl text-balance font-semibold tracking-tight sm:text-7xl"
+                >
+                    Eventos de Empresas y Celebraciones Corporativas
+                </h2>
+                <hr class="w-24 border-t-2 border-border" />
+                <p class="max-w-md text-lg text-zinc-300">
+                    Conecta con tu equipo en un espacio que inspira
+                    productividad y confianza. Nuestro salón se adapta a todas
+                    las necesidades corporativas. Ya sea para una jornada formal
+                    o una celebración, contarás con:
+                </p>
+                <div class="flex space-x-4">
+                    <button
+                        data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6 has-[>svg]:px-4"
+                    >
+                        Get Started
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-arrow-right"
+                            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"
+                            ></path></svg
+                        >
+                    </button>
+                    <button
+                        data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 has-[>svg]:px-4"
+                    >
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <VideoIcon className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Proyector multimedia
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Pantalla gigante para presentaciones y videos, con
+                        proyector multimedia de alta definición
+                    </p>
+                </div>
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <Volume2 className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Amplificación de sonido
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Sistema de sonido de alta calidad para música y
+                        presentaciones en vivo
+                    </p>
+                </div>
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <Croissant className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Servicio de coffee break o banquetería
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Servicio de coffee break o banquetería para tus
+                        celebraciones y eventos corporativos
+                    </p>
+                </div>
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <Car className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Estacionamiento privado y seguro
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Estacionamiento privado y seguro para más de 100
+                        vehículos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="relative overflow-hidden py-24 md:py-32">
+    <div
+        class="absolute bottom-auto -z-10 left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[60%] translate-y-[25%] rounded-full bg-[rgb(235,103,63)] opacity-50 blur-[80px]"
+    >
+    </div>
+    <div class="container mx-auto px-2">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <VideoIcon className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Proyector multimedia
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Pantalla gigante para presentaciones y videos, con
+                        proyector multimedia de alta definición
+                    </p>
+                </div>
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <Volume2 className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Amplificación de sonido
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Sistema de sonido de alta calidad para música y
+                        presentaciones en vivo
+                    </p>
+                </div>
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <Croissant className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Servicio de coffee break o banquetería
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Servicio de coffee break o banquetería para tus
+                        celebraciones y eventos corporativos
+                    </p>
+                </div>
+                <div
+                    class="rounded-lg border border-border/30 bg-white/20 backdrop-blur-3xl p-6 shadow-sm transition-all"
+                >
+                    <div
+                        class="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/10"
+                    >
+                        <Car className="h-4 w-4" />
+                    </div>
+                    <h3 class="mb-2 text-xl font-semibold">
+                        Estacionamiento privado y seguro
+                    </h3>
+                    <p class="text-sm text-zinc-200">
+                        Estacionamiento privado y seguro para más de 100
+                        vehículos
+                    </p>
+                </div>
+            </div>
+            <div class="space-y-8 flex flex-col items-end text-right">
+                <h2
+                    class="text-5xl text-balance font-semibold tracking-tight sm:text-7xl"
+                >
+                    Eventos de Empresas y Celebraciones Corporativas
+                </h2>
+                <hr class="w-24 border-t-2 border-border" />
+                <p class="max-w-md text-lg text-zinc-300">
+                    Conecta con tu equipo en un espacio que inspira
+                    productividad y confianza. Nuestro salón se adapta a todas
+                    las necesidades corporativas. Ya sea para una jornada formal
+                    o una celebración, contarás con:
+                </p>
+                <div class="flex space-x-4">
+                    <button
+                        data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6 has-[>svg]:px-4"
+                    >
+                        Get Started
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-arrow-right"
+                            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"
+                            ></path></svg
+                        >
+                    </button>
+                    <button
+                        data-slot="button"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 has-[>svg]:px-4"
+                    >
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
