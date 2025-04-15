@@ -1,0 +1,87 @@
+---
+import { MessageCircle } from "lucide-react";
+import { Button } from "../ui/button";
+---
+
+<section class="relative overflow-hidden py-32 px-2">
+    <div class="relative container mx-auto">
+        <div class="grid items-center gap-8 lg:grid-cols-2">
+            <div
+                class="flex flex-col items-center text-center lg:items-start lg:text-left"
+            >
+                <h1 class="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+                    Matrimonios en La Serena
+                </h1>
+                <p class="mb-8 max-w-xl text-zinc-300 lg:text-xl">
+                    Contamos con un salón rústico de más de 330 m², rodeado de
+                    naturaleza, perfecto para ceremonias al aire libre,
+                    recepciones y fiestas. Todo equipado con tecnología de
+                    sonido, iluminación y multimedia.
+                </p>
+                <div
+                    class="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start"
+                >
+                    <Button>
+                        Contáctanos para hacer tu evento
+                        <MessageCircle className="h-4 w-4" />
+                    </Button>
+                </div>
+            </div>
+            <div
+                class="relative mt-16 -mb-16 flex justify-center gap-4 lg:mt-0 lg:mb-0 lg:justify-end"
+            >
+                <div
+                    class="absolute -inset-20 z-0 rounded-2xl bg-gradient-to-r from-amber-100 via-red-200 to-teal-100 opacity-70 blur-3xl md:inset-5"
+                >
+                </div>
+                <div class="relative z-10">
+                    <img
+                        src="/images/hero/Fotos Oficiales-175.jpg"
+                        alt="placeholder hero"
+                        class="h-[400px] rounded-lg border border-border object-cover object-center sm:max-w-[420px]"
+                    />
+                </div>
+                <div
+                    class="relative z-10 hidden flex-col gap-4 sm:flex md:hidden 2xl:flex"
+                >
+                    <div
+                        class="w-[256px] flex-1 p-3 overflow-clip rounded-lg border border-border bg-background"
+                    >
+                        <h3 class="text-black font-bold text-lg text-center">
+                            Tu matrimonio, a tu estilo
+                        </h3>
+                        <ul
+                            class="mt-2 list-disc pl-4 text-sm text-zinc-700 space-y-3.5"
+                        >
+                            <li>Arriendo de mobiliario y vajilla</li>
+                            <li>Decoración personalizada</li>
+                            <li>Estacionamiento privado</li>
+                            <li>
+                                Coordinación y acompañamiento durante el evento
+                            </li>
+                        </ul>
+                        <p class="text-center">
+                            <a
+                                href="/matrimonio"
+                                class="mt-4 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-xs transition-all hover:bg-primary/90 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                            >
+                                Consultas y reservas
+                                <MessageCircle className="h-4 w-4" />
+                            </a>
+                        </p>
+                    </div>
+                    <div
+                        class="aspect-[2/1] w-[256px] overflow-clip rounded-lg border border-border bg-background"
+                    >
+                        <p
+                            class="p-4 text-md font-semibold text-pretty text-center text-zinc-700 italic"
+                        >
+                            Cásate en un lugar que refleje lo que eres. Tu
+                            historia merece un escenario a la altura.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
