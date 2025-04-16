@@ -2,11 +2,11 @@
 import Hero from "@/components/interfaces/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import Subhero from "@/components/interfaces/Subhero.astro";
-import Service from "@/components/interfaces/Service.astro";
+import Service from "@/components/interfaces/Service";
 ---
 
 <Layout>
     <Hero />
     <Subhero />
-    <Service />
+    <Service client:idle />
 </Layout>
