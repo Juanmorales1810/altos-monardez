@@ -45,7 +45,7 @@ export default function DigitalExperienceSection() {
                         defaultValue="empresas"
                         className="mx-auto flex w-fit flex-col items-center gap-8 md:gap-12"
                     >
-                        <TabsList className="bg-muted/45 sticky top-20 backdrop-blur-3xl text-muted-foreground w-fit items-center justify-center rounded-lg flex h-auto gap-x-2 p-2 md:block">
+                        <TabsList className="bg-muted/45 sticky top-20 backdrop-blur-3xl text-muted-foreground w-fit items-center justify-center rounded-lg flex h-auto gap-x-2 p-2 ">
                             <TabsTrigger
                                 value="empresas"
                                 className="text-sm hover:bg-white md:text-base"
@@ -68,7 +68,7 @@ export default function DigitalExperienceSection() {
                                 value="produccion"
                                 className="text-sm hover:bg-white md:text-base"
                             >
-                                Produccion
+                                Producción
                             </TabsTrigger>
                         </TabsList>
 
