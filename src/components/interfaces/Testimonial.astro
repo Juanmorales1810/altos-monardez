@@ -1,0 +1,189 @@
+---
+import { Star } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Card, CardContent, CardFooter } from "../ui/card";
+---
+
+<section class="py-32">
+    <div class="container mx-auto px-2">
+        <div class="flex flex-col gap-6">
+            <div
+                class="grid grid-cols-1 items-stretch gap-x-0 gap-y-4 lg:grid-cols-3 lg:gap-4"
+            >
+                <img
+                    src="/images/testimonials/image.png"
+                    alt="placeholder"
+                    class="h-72 w-full rounded-md object-cover lg:h-auto"
+                />
+                <Card
+                    className="col-span-2 flex items-center justify-center p-6"
+                >
+                    <h2 class="mb-4 text-2xl font-bold text-center lg:text-5xl">
+                        Lo que dicen nuestros clientes
+                    </h2>
+                    <div class="flex flex-col gap-4">
+                        <q class="text-xl font-medium lg:text-3xl">
+                            Muy buen servicio nada que decir la organización de
+                            todo el evento fue maravilloso agradecer a Don Luis
+                            que nos apoyo en todo momento en el evento, fue un
+                            momento mágico que sin que ellos se hubieran ocupado
+                            de todo no hubiera sido igual🥰🥰 Super
+                            Recomendados.
+                        </q>
+                        <div class="flex flex-col items-start">
+                            <p>Diana</p>
+                            <div class="my-2 flex items-center gap-0.5">
+                                <Star
+                                    className="size-5 fill-primary stroke-none"
+                                />
+                                <Star
+                                    className="size-5 fill-primary stroke-none"
+                                />
+                                <Star
+                                    className="size-5 fill-primary stroke-none"
+                                />
+                                <Star
+                                    className="size-5 fill-primary stroke-none"
+                                />
+                                <Star
+                                    className="size-5 fill-primary stroke-none"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </Card>
+            </div>
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                <Card>
+                    <CardContent
+                        className="px-6 pt-6 leading-7 text-foreground/70"
+                    >
+                        <q>
+                            Lugar mágico, comida exquisita y gran calidad humana
+                            del equipo. Son los mas organizados, proactivos y
+                            profesionales. 100/10!!!!
+                        </q>
+                    </CardContent>
+                    <CardFooter>
+                        <div class="flex gap-4 leading-5">
+                            <Avatar
+                                className="size-9 rounded-full ring-1 ring-input"
+                            >
+                                <img
+                                    src="/images/testimonials/gu_1992745.webp"
+                                    alt=""
+                                />
+                            </Avatar>
+                            <div class="text-sm">
+                                <p class="ml-1 font-medium">Ivania</p>
+                                <div class="flex items-center gap-0.5">
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </CardFooter>
+                </Card>
+                <Card>
+                    <CardContent
+                        className="px-6 pt-6 leading-7 text-foreground/70"
+                    >
+                        <q>
+                            El lugar es hermoso, Luis y su equipo hicieron que
+                            nuestro matrimonio fuera un día increíble y hermoso!
+                            Elegiría este lugar mil veces más!
+                        </q>
+                    </CardContent>
+                    <CardFooter>
+                        <div class="flex gap-4 leading-5">
+                            <Avatar
+                                className="size-9 rounded-full ring-1 ring-input"
+                            >
+                                <img
+                                    src="/images/testimonials/gu_2278114.webp"
+                                    alt=""
+                                />
+                            </Avatar>
+                            <div class="text-sm">
+                                <p class="ml-1 font-medium">Valentina</p>
+                                <div class="flex items-center gap-0.5">
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </CardFooter>
+                </Card>
+                <Card>
+                    <CardContent
+                        className="px-6 pt-6 leading-7 text-foreground/70"
+                    >
+                        <q>
+                            Estuvo todo muy bien organizado, se nota la
+                            preocupación por los detalles y la comunicación
+                            siempre fue fluida. La pasamos increíble !
+                        </q>
+                    </CardContent>
+                    <CardFooter>
+                        <div class="flex gap-4 leading-5">
+                            <Avatar
+                                className="size-9 rounded-full ring-1 ring-input"
+                            >
+                                <img
+                                    src="/images/testimonials/gu_1859901.webp"
+                                    alt=""
+                                />
+                            </Avatar>
+                            <div class="text-sm">
+                                <p class="ml-1 font-medium">Darlin</p>
+                                <div class="flex items-center gap-0.5">
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                    <Star
+                                        className="size-4 fill-primary stroke-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </CardFooter>
+                </Card>
+            </div>
+        </div>
+    </div>
+</section>
