@@ -3,10 +3,14 @@ import Hero from "@/components/interfaces/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import Subhero from "@/components/interfaces/Subhero.astro";
 import Service from "@/components/interfaces/Service";
+import Gallery from "@/components/interfaces/Gallery.astro";
+import Testimonial from "@/components/interfaces/Testimonial.astro";
 ---
 
 <Layout>
     <Hero />
     <Subhero />
     <Service client:idle />
+    <Gallery />
+    <Testimonial client:load />
 </Layout>
