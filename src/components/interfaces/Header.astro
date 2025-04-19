@@ -16,13 +16,14 @@ const routes = [
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
-                <a class="block text-zinc-600" href="/">
-                    <span class="sr-only">Home</span>
-                    <img
+                <a class="block" href="/">
+                    <span class="text-2xl font-bold">Altos de Monardez</span>
+
+                    <!-- <img
                         src="/logo.png"
                         alt="Logo de Oakland Services"
                         class="h-12"
-                    />
+                    /> -->
                 </a>
             </div>
 
@@ -32,7 +33,9 @@ const routes = [
                         {
                             routes.map((route) => (
                                 <li>
-                                    <a href={route.href}>{route.name}</a>
+                                    <a class="font-semibold" href={route.href}>
+                                        {route.name}
+                                    </a>
                                 </li>
                             ))
                         }
