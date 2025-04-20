@@ -1,0 +1,50 @@
+---
+import ContactFormFields from "../contact-form-fields";
+---
+
+<section class="py-32">
+    <div class="container mx-auto px-2">
+        <div
+            class="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row lg:gap-20"
+        >
+            <div class="mx-auto flex max-w-sm flex-col justify-between gap-10">
+                <div class="text-center lg:text-left">
+                    <h1 class="mb-2 text-5xl font-semibold lg:mb-1 lg:text-6xl">
+                        Contact Us
+                    </h1>
+                    <p class="text-muted-foreground">
+                        We are available for questions, feedback, or
+                        collaboration opportunities. Let us know how we can help
+                        plan your perfect event!
+                    </p>
+                </div>
+                <div class="mx-auto w-fit lg:mx-0">
+                    <h3
+                        class="mb-6 text-center text-2xl font-semibold lg:text-left"
+                    >
+                        Contact Details
+                    </h3>
+                    <ul class="ml-4 list-disc">
+                        <li>
+                            <span class="font-bold">Phone: </span>(123) 34567890
+                        </li>
+                        <li>
+                            <span class="font-bold">Email: </span>
+                            <a
+                                href="mailto:your-email@example.com"
+                                class="underline"
+                            >
+                                your-email@example.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="mx-auto flex max-w-screen-md w-full flex-col rounded-lg border p-10"
+            >
+                <ContactFormFields client:idle />
+            </div>
+        </div>
+    </div>
+</section>
