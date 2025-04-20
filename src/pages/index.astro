@@ -5,6 +5,7 @@ import Subhero from "@/components/interfaces/Subhero.astro";
 import Service from "@/components/interfaces/Service";
 import Gallery from "@/components/interfaces/Gallery.astro";
 import Testimonial from "@/components/interfaces/Testimonial.astro";
+import Contact from "@/components/interfaces/Contact.astro";
 ---
 
 <Layout>
@@ -12,5 +13,6 @@ import Testimonial from "@/components/interfaces/Testimonial.astro";
     <Subhero />
     <Service client:idle />
     <Gallery />
-    <Testimonial client:load />
+    <Testimonial />
+    <Contact />
 </Layout>
