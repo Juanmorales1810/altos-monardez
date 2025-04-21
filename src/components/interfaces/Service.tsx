@@ -1,4 +1,3 @@
-// Eliminamos "use client" ya que es específico de Next.js
 import {
     CheckCircle,
     ArrowRight,
@@ -17,19 +16,16 @@ import {
     Lamp,
     Clapperboard,
 } from "lucide-react";
-
-// Importaciones relativas en lugar de absolutas con @/
-// Ajusta estas rutas según la estructura de tu proyecto Astro
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function DigitalExperienceSection() {
     return (
-        <section className="py-32 px-2">
+        <section className="py-32">
             <div className="relative container mx-auto">
                 <div className="absolute bottom-auto -z-10 left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[60%] translate-y-[25%] rounded-full bg-[rgb(63,118,235)] opacity-50 blur-[80px]"></div>
 
-                <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6">
+                <div className="mx-auto flex max-w-screen-md flex-col items-center gap-6 px-2">
                     <h2 className="text-center text-3xl font-semibold lg:text-5xl">
                         Nuestros Servicios para mejorar tu experiencia
                     </h2>
@@ -45,7 +41,7 @@ export default function DigitalExperienceSection() {
                         defaultValue="empresas"
                         className="mx-auto flex w-fit flex-col items-center gap-8 md:gap-12"
                     >
-                        <TabsList className="bg-muted/45 sticky top-20 backdrop-blur-3xl text-muted-foreground w-fit items-center justify-center rounded-lg flex h-auto gap-x-2 p-2 ">
+                        <TabsList className="bg-muted/45 sticky z-50 top-20 backdrop-blur-3xl text-muted-foreground w-fit items-center justify-center rounded-lg flex h-auto gap-x-1 p-1 md:p-2 md:gap-x-2">
                             <TabsTrigger
                                 value="empresas"
                                 className="text-sm hover:bg-white md:text-base"
@@ -74,7 +70,7 @@ export default function DigitalExperienceSection() {
 
                         <TabsContent
                             value="empresas"
-                            className="flex-1 outline-none max-w-screen-xl"
+                            className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
@@ -130,9 +126,13 @@ export default function DigitalExperienceSection() {
                                     </Button>
                                 </div>
                                 <img
-                                    alt="Pre-built Components for Rapid Development"
+                                    alt="Foto de Eventos de Empresas y Celebraciones Corporativas"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/placeholder.svg"
+                                    src="/images/service/Fotografías Oficiales-214.avif"
+                                    width={610}
+                                    height={400}
+                                    decoding="async"
+                                    loading="lazy"
                                 />
                             </div>
                         </TabsContent>
@@ -193,9 +193,13 @@ export default function DigitalExperienceSection() {
                                     </Button>
                                 </div>
                                 <img
-                                    alt="Pre-built Components for Rapid Development"
+                                    alt="Foto de Licenciaturas y Fiestas Escolares"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/placeholder.svg"
+                                    src="/images/service/Fotos Oficiales-255.avif"
+                                    width={610}
+                                    height={400}
+                                    decoding="async"
+                                    loading="lazy"
                                 />
                             </div>
                         </TabsContent>
@@ -255,9 +259,13 @@ export default function DigitalExperienceSection() {
                                     </Button>
                                 </div>
                                 <img
-                                    alt="Pre-built Components for Rapid Development"
+                                    alt="Foto de eventos particulares"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/placeholder.svg"
+                                    src="/images/service/Fotos Oficiales-504.avif"
+                                    width={610}
+                                    height={400}
+                                    decoding="async"
+                                    loading="lazy"
                                 />
                             </div>
                         </TabsContent>
@@ -312,9 +320,13 @@ export default function DigitalExperienceSection() {
                                     </Button>
                                 </div>
                                 <img
-                                    alt="Pre-built Components for Rapid Development"
+                                    alt="Foto de Producción técnica y audiovisual"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/placeholder.svg"
+                                    src="/images/service/PORTADA PRINCIPAL (1).avif"
+                                    width={610}
+                                    height={400}
+                                    decoding="async"
+                                    loading="lazy"
                                 />
                             </div>
                         </TabsContent>
