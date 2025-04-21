@@ -139,7 +139,7 @@ export default function DigitalExperienceSection() {
 
                         <TabsContent
                             value="licenciaturas"
-                            className="flex-1 outline-none max-w-screen-xl"
+                            className="flex-1 outline-none max-w-screen-xlpx-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
@@ -206,7 +206,7 @@ export default function DigitalExperienceSection() {
 
                         <TabsContent
                             value="particular"
-                            className="flex-1 outline-none max-w-screen-xl"
+                            className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
@@ -272,7 +272,7 @@ export default function DigitalExperienceSection() {
 
                         <TabsContent
                             value="produccion"
-                            className="flex-1 outline-none max-w-screen-xl"
+                            className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
