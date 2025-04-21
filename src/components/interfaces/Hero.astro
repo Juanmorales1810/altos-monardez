@@ -1,6 +1,13 @@
 ---
 import { NotebookPen } from "lucide-react";
 import { Button } from "../ui/button";
+import { Image } from "astro:assets";
+
+import ImageHero from "@/assets/images/hero/Fotos Oficiales-3.avif";
+import ImageHero2 from "@/assets/images/hero/Fotos Oficiales-251.avif";
+import ImageHero3 from "@/assets/images/hero/Fotos Oficiales-186.avif";
+import ImageHero4 from "@/assets/images/hero/Fotos Oficiales-51.avif";
+import ImageHero5 from "@/assets/images/hero/Fotos Oficiales-175.avif";
 ---
 
 <section class="relative py-12 md:py-32">
@@ -48,39 +55,39 @@ import { Button } from "../ui/button";
             Global Partnerships and Innovation
         </div>
     </div>
-    <div class="mx-auto mt-14 max-w-screen-xl overflow-hidden py-8">
+    <div class="mx-auto mt-14 max-w-screen-xl overflow-hidden py-12">
         <div class="relative w-full group">
             <div class="relative">
-                <img
-                    src="/images/hero/Fotos Oficiales-3.jpg"
+                <Image
+                    src={ImageHero}
                     alt="placeholder"
                     class="relative left-1/2 mx-auto max-h-[480px] w-full rounded-xl object-cover shadow-md lg:static lg:max-w-[60vw] xl:max-w-screen-md"
                 />
-                <img
-                    src="/images/hero/Fotos Oficiales-3.jpg"
+                <Image
+                    src={ImageHero}
                     alt="placeholder"
-                    class="absolute mx-auto left-1/2 blur-lg saturate-200 -z-10 inset-0 max-h-[480px] w-full rounded-xl object-cover shadow-md lg:left-0 lg:max-w-[60vw] xl:max-w-screen-md"
+                    class="absolute mx-auto left-1/2 blur-xl saturate-200 -z-10 inset-0 max-h-[480px] w-full rounded-xl object-cover shadow-md lg:left-0 lg:max-w-[60vw] xl:max-w-screen-md"
                 />
             </div>
-            <img
-                src="/images/hero/Fotos Oficiales-251.jpg"
+            <Image
+                src={ImageHero2}
                 alt="placeholder"
-                class="absolute top-0 right-20 -z-10 hidden max-h-60 -rotate-12 rounded-xl object-cover shadow-md rotate-y-180 lg:block group-hover:rotate-0 group-hover:right-0 transition-all duration-500"
+                class="absolute top-0 right-20 -z-10 hidden max-h-60 -rotate-12 rounded-xl object-cover shadow-md rotate-y-180 lg:block group-hover:rotate-0 group-hover:right-0 transition-all duration-500 ease-in-out"
             />
-            <img
-                src="/images/hero/Fotos Oficiales-186.jpg"
+            <Image
+                src={ImageHero3}
                 alt="placeholder"
-                class="absolute right-20 bottom-0 hidden rotate-12 rounded-xl object-cover shadow-md md:max-h-60 lg:block group-hover:rotate-0 group-hover:-bottom-5 group-hover:right-10 transition-all duration-500"
+                class="absolute right-20 bottom-0 hidden rotate-12 rounded-xl object-cover shadow-md md:max-h-60 lg:block group-hover:rotate-0 group-hover:-bottom-5 group-hover:right-10 transition-all duration-500 ease-in-out"
             />
-            <img
-                src="/images/hero/Fotos Oficiales-51.jpg"
+            <Image
+                src={ImageHero4}
                 alt="placeholder"
-                class="absolute top-0 left-1/4 -z-10 max-h-44 -rotate-12 rounded-xl object-cover shadow-md min-[450px]:max-h-52 sm:left-1/3 md:max-h-60 lg:left-20 group-hover:rotate-0 group-hover:-left-0 transition-all duration-500"
+                class="absolute top-0 left-1/4 -z-10 max-h-44 -rotate-12 rounded-xl object-cover shadow-md min-[450px]:max-h-52 sm:left-1/3 md:max-h-60 lg:left-20 group-hover:rotate-0 group-hover:-left-0 transition-all duration-500 ease-in-out"
             />
-            <img
-                src="/images/hero/Fotos Oficiales-175.jpg"
+            <Image
+                src={ImageHero5}
                 alt="placeholder"
-                class="absolute bottom-0 left-1/4 max-h-44 rotate-12 rounded-xl object-cover shadow-md min-[450px]:max-h-52 sm:left-1/3 md:max-h-60 lg:left-20 group-hover:rotate-0 group-hover:left-10 group-hover:-bottom-5 transition-all duration-500"
+                class="absolute bottom-0 left-1/4 max-h-44 rotate-12 rounded-xl object-cover shadow-md min-[450px]:max-h-52 sm:left-1/3 md:max-h-60 lg:left-20 group-hover:rotate-0 group-hover:left-10 group-hover:-bottom-5 transition-all duration-500 ease-in-out"
             />
         </div>
     </div>
