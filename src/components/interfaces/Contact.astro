@@ -9,24 +9,24 @@ import ContactFormFields from "../contact-form-fields";
         >
             <div class="mx-auto flex max-w-sm flex-col justify-between gap-10">
                 <div class="text-center lg:text-left">
-                    <h1 class="mb-2 text-5xl font-semibold lg:mb-1 lg:text-6xl">
-                        Contact Us
-                    </h1>
-                    <p class="text-muted-foreground">
-                        We are available for questions, feedback, or
-                        collaboration opportunities. Let us know how we can help
-                        plan your perfect event!
+                    <h2 class="mb-2 text-5xl font-semibold lg:mb-1 lg:text-6xl">
+                        Cotiza tu evento ahora
+                    </h2>
+                    <p class="text-zinc-300">
+                        Haz tu consulta en menos de un minuto. Rellena nuestro
+                        formulario y recibe una propuesta en menos de 24 horas
                     </p>
                 </div>
                 <div class="mx-auto w-fit lg:mx-0">
                     <h3
                         class="mb-6 text-center text-2xl font-semibold lg:text-left"
                     >
-                        Contact Details
+                        Nuestra información de contacto
                     </h3>
                     <ul class="ml-4 list-disc">
                         <li>
-                            <span class="font-bold">Phone: </span>(123) 34567890
+                            <span class="font-bold">WhatsApp: </span>(123)
+                            34567890
                         </li>
                         <li>
                             <span class="font-bold">Email: </span>
@@ -41,7 +41,7 @@ import ContactFormFields from "../contact-form-fields";
                 </div>
             </div>
             <div
-                class="mx-auto flex max-w-screen-md w-full flex-col rounded-lg border p-10"
+                class="relative mx-auto flex max-w-screen-md w-full flex-col rounded-lg border p-10 bg-[url(/images/contact/image.png)] bg-cover bg-center after:bg-cover after:bg-center after:w-full after:h-full after:content-[''] after:inset-0 after:absolute after:bg-[url(/images/contact/image.png)] after:blur-2xl after:saturate-100 after:-z-10"
             >
                 <ContactFormFields client:idle />
             </div>
