@@ -1,6 +1,9 @@
 ---
 import { MessageCircle } from "lucide-react";
 import { Button } from "../ui/button";
+
+import ImageSubHero from "@/assets/images/subhero/Fotos Oficiales-110.avif";
+import { Image } from "astro:assets";
 ---
 
 <section class="relative overflow-hidden py-32 px-2">
@@ -35,8 +38,8 @@ import { Button } from "../ui/button";
                 >
                 </div>
                 <div class="relative z-10">
-                    <img
-                        src="/images/hero/Fotos Oficiales-175.jpg"
+                    <Image
+                        src={ImageSubHero}
                         alt="placeholder hero"
                         class="h-[400px] w-full rounded-lg border border-border object-cover object-center md:max-w-[420px]"
                     />
