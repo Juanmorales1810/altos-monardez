@@ -16,7 +16,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, LoaderCircle } from "lucide-react";
 
 // Esquema de validación con zod
 const formSchema = z.object({
@@ -87,18 +87,20 @@ export default function ContactFormFields() {
                 <Alert className="bg-green-50 border-green-200">
                     <CheckCircle className="h-4 w-4 text-green-600" />
                     <AlertDescription className="text-green-600">
-                        Your message has been sent successfully!
+                        Tu mensaje ha sido enviado con éxito. Nos pondremos en
+                        contacto contigo pronto.
                     </AlertDescription>
                 </Alert>
             )}
 
             <div className="flex flex-col sm:flex-row gap-4">
                 <div className="grid w-full items-center gap-1.5">
-                    <Label htmlFor="firstname">First Name</Label>
+                    <Label htmlFor="firstname">Nombre</Label>
                     <Input
                         id="firstname"
-                        placeholder="First Name"
+                        placeholder="Nombre"
                         {...register("firstname")}
+                        className="bg-white/70 backdrop-blur-2xl text-black"
                         aria-invalid={errors.firstname ? "true" : "false"}
                     />
                     {errors.firstname && (
@@ -108,10 +110,11 @@ export default function ContactFormFields() {
                     )}
                 </div>
                 <div className="grid w-full items-center gap-1.5">
-                    <Label htmlFor="lastname">Last Name</Label>
+                    <Label htmlFor="lastname">Apellido</Label>
                     <Input
                         id="lastname"
-                        placeholder="Last Name"
+                        placeholder="Apellido"
+                        className="bg-white/70 backdrop-blur-2xl text-black"
                         {...register("lastname")}
                         aria-invalid={errors.lastname ? "true" : "false"}
                     />
@@ -128,7 +131,8 @@ export default function ContactFormFields() {
                 <Input
                     type="email"
                     id="email"
-                    placeholder="Email"
+                    placeholder="Ingresa tu email"
+                    className="bg-white/70 backdrop-blur-2xl text-black"
                     {...register("email")}
                     aria-invalid={errors.email ? "true" : "false"}
                 />
@@ -140,17 +144,19 @@ export default function ContactFormFields() {
             </div>
 
             <div className="grid w-full items-center gap-1.5">
-                <Label htmlFor="eventType">Event Type</Label>
+                <Label htmlFor="eventType">Tipo de evento</Label>
                 <Select
-                    className="w-full"
                     onValueChange={(value) => {
                         // Necesario para integrar Select de shadcn con react-hook-form
                         const event = { target: { name: "eventType", value } };
                         register("eventType").onChange(event as any);
                     }}
                 >
-                    <SelectTrigger className="w-full" id="eventType">
-                        <SelectValue placeholder="Select event type" />
+                    <SelectTrigger
+                        className="w-full bg-white/70 backdrop-blur-2xl text-black"
+                        id="eventType"
+                    >
+                        <SelectValue placeholder="Selecciona un tipo de evento" />
                     </SelectTrigger>
                     <SelectContent>
                         <SelectItem value="wedding">Wedding</SelectItem>
@@ -171,10 +177,11 @@ export default function ContactFormFields() {
 
             <div className="flex flex-col sm:flex-row gap-4">
                 <div className="grid w-full items-center gap-1.5">
-                    <Label htmlFor="eventDate">Event Date</Label>
+                    <Label htmlFor="eventDate">Fecha del evento</Label>
                     <Input
                         type="date"
                         id="eventDate"
+                        className="bg-white/70 backdrop-blur-2xl text-black"
                         {...register("eventDate")}
                         aria-invalid={errors.eventDate ? "true" : "false"}
                     />
@@ -186,11 +193,12 @@ export default function ContactFormFields() {
                 </div>
 
                 <div className="grid w-full items-center gap-1.5">
-                    <Label htmlFor="attendees">Number of Attendees</Label>
+                    <Label htmlFor="attendees">Numero de asistentes</Label>
                     <Input
                         type="number"
                         id="attendees"
                         min="1"
+                        className="bg-white/70 backdrop-blur-2xl text-black"
                         {...register("attendees")}
                         aria-invalid={errors.attendees ? "true" : "false"}
                     />
@@ -203,11 +211,11 @@ export default function ContactFormFields() {
             </div>
 
             <div className="grid w-full gap-1.5">
-                <Label htmlFor="message">Message</Label>
+                <Label htmlFor="message">Mensaje</Label>
                 <Textarea
                     id="message"
-                    placeholder="Type your message here."
-                    className="min-h-32"
+                    placeholder="Escribe tu mensaje aquí..."
+                    className="min-h-32 bg-white/70 backdrop-blur-2xl text-black"
                     {...register("message")}
                     aria-invalid={errors.message ? "true" : "false"}
                 />
@@ -219,7 +227,14 @@ export default function ContactFormFields() {
             </div>
 
             <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? (
+                    <>
+                        Enviando...{" "}
+                        <LoaderCircle className="animate-spin ease-in-out" />{" "}
+                    </>
+                ) : (
+                    "Enviar mensaje"
+                )}
             </Button>
         </form>
     );
