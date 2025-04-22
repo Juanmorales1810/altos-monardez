@@ -2,6 +2,12 @@
 import { Star } from "lucide-react";
 import { Avatar } from "../ui/avatar";
 import { Card, CardContent, CardFooter } from "../ui/card";
+
+import ImageTestimonial from "@/assets/images/testimonials/image.avif";
+import ImageTestimonial2 from "@/assets/images/testimonials/gu_1992745.webp";
+import ImageTestimonial3 from "@/assets/images/testimonials/gu_2278114.webp";
+import ImageTestimonial4 from "@/assets/images/testimonials/gu_1859901.webp";
+import { Image } from "astro:assets";
 ---
 
 <section class="py-32">
@@ -10,8 +16,8 @@ import { Card, CardContent, CardFooter } from "../ui/card";
             <div
                 class="grid grid-cols-1 items-stretch gap-x-0 gap-y-4 lg:grid-cols-3 lg:gap-4"
             >
-                <img
-                    src="/images/testimonials/image.png"
+                <Image
+                    src={ImageTestimonial}
                     alt="placeholder"
                     class="h-72 w-full rounded-md object-cover lg:h-auto"
                 />
@@ -34,19 +40,19 @@ import { Card, CardContent, CardFooter } from "../ui/card";
                             <p>Diana</p>
                             <div class="my-2 flex items-center gap-0.5">
                                 <Star
-                                    className="size-5 fill-primary stroke-none"
+                                    className="size-5 fill-yellow-500 stroke-none"
                                 />
                                 <Star
-                                    className="size-5 fill-primary stroke-none"
+                                    className="size-5 fill-yellow-500 stroke-none"
                                 />
                                 <Star
-                                    className="size-5 fill-primary stroke-none"
+                                    className="size-5 fill-yellow-500 stroke-none"
                                 />
                                 <Star
-                                    className="size-5 fill-primary stroke-none"
+                                    className="size-5 fill-yellow-500 stroke-none"
                                 />
                                 <Star
-                                    className="size-5 fill-primary stroke-none"
+                                    className="size-5 fill-yellow-500 stroke-none"
                                 />
                             </div>
                         </div>
@@ -69,28 +75,28 @@ import { Card, CardContent, CardFooter } from "../ui/card";
                             <Avatar
                                 className="size-9 rounded-full ring-1 ring-input"
                             >
-                                <img
-                                    src="/images/testimonials/gu_1992745.webp"
-                                    alt=""
+                                <Image
+                                    src={ImageTestimonial4}
+                                    alt="Foto de Ivana"
                                 />
                             </Avatar>
                             <div class="text-sm">
                                 <p class="ml-1 font-medium">Ivania</p>
                                 <div class="flex items-center gap-0.5">
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                 </div>
                             </div>
@@ -112,28 +118,28 @@ import { Card, CardContent, CardFooter } from "../ui/card";
                             <Avatar
                                 className="size-9 rounded-full ring-1 ring-input"
                             >
-                                <img
-                                    src="/images/testimonials/gu_2278114.webp"
-                                    alt=""
+                                <Image
+                                    src={ImageTestimonial3}
+                                    alt="Foto de Valentina"
                                 />
                             </Avatar>
                             <div class="text-sm">
                                 <p class="ml-1 font-medium">Valentina</p>
                                 <div class="flex items-center gap-0.5">
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                 </div>
                             </div>
@@ -155,28 +161,28 @@ import { Card, CardContent, CardFooter } from "../ui/card";
                             <Avatar
                                 className="size-9 rounded-full ring-1 ring-input"
                             >
-                                <img
-                                    src="/images/testimonials/gu_1859901.webp"
-                                    alt=""
+                                <Image
+                                    src={ImageTestimonial2}
+                                    alt="Foto de Darlin"
                                 />
                             </Avatar>
                             <div class="text-sm">
                                 <p class="ml-1 font-medium">Darlin</p>
                                 <div class="flex items-center gap-0.5">
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                     <Star
-                                        className="size-4 fill-primary stroke-none"
+                                        className="size-4 fill-yellow-500 stroke-none"
                                     />
                                 </div>
                             </div>
