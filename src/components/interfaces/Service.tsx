@@ -119,9 +119,12 @@ export default function DigitalExperienceSection() {
                                     </p>
                                     <Button
                                         variant="outline"
-                                        className="mt-8 gap-1.5"
+                                        className="mt-8 gap-1.5 text-black"
                                     >
-                                        Explore Products
+                                        Conocer más
+                                        <span className="hidden md:inline">
+                                            sobre nuestros servicios
+                                        </span>
                                         <ArrowRight className="w-4" />
                                     </Button>
                                 </div>
@@ -186,9 +189,12 @@ export default function DigitalExperienceSection() {
                                     </p>
                                     <Button
                                         variant="outline"
-                                        className="mt-8 gap-1.5"
+                                        className="mt-8 gap-1.5 text-black"
                                     >
-                                        Explore Products
+                                        Conocer más
+                                        <span className="hidden md:inline">
+                                            sobre nuestros servicios
+                                        </span>
                                         <ArrowRight className="w-4" />
                                     </Button>
                                 </div>
@@ -252,9 +258,12 @@ export default function DigitalExperienceSection() {
                                     </p>
                                     <Button
                                         variant="outline"
-                                        className="mt-8 gap-1.5"
+                                        className="mt-8 gap-1.5 text-black"
                                     >
-                                        Explore Products
+                                        Conocer más
+                                        <span className="hidden md:inline">
+                                            sobre nuestros servicios
+                                        </span>
                                         <ArrowRight className="w-4" />
                                     </Button>
                                 </div>
@@ -313,9 +322,12 @@ export default function DigitalExperienceSection() {
                                     </p>
                                     <Button
                                         variant="outline"
-                                        className="mt-8 gap-1.5"
+                                        className="mt-8 gap-1.5 text-black"
                                     >
-                                        Explore Products
+                                        Conocer más
+                                        <span className="hidden md:inline">
+                                            sobre nuestros servicios
+                                        </span>
                                         <ArrowRight className="w-4" />
                                     </Button>
                                 </div>
