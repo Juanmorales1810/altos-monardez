@@ -16,7 +16,7 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { CheckCircle, LoaderCircle } from "lucide-react";
+import { CheckCircle, LoaderCircle, Send } from "lucide-react";
 
 // Esquema de validación con zod
 const formSchema = z.object({
@@ -226,14 +226,22 @@ export default function ContactFormFields() {
                 )}
             </div>
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Button
+                variant="secondary"
+                type="submit"
+                className="w-full"
+                disabled={isSubmitting}
+            >
                 {isSubmitting ? (
                     <>
                         Enviando...{" "}
                         <LoaderCircle className="animate-spin ease-in-out" />{" "}
                     </>
                 ) : (
-                    "Enviar mensaje"
+                    <>
+                        Enviar mensaje
+                        <Send className="h-4 w-4 ml-2" />{" "}
+                    </>
                 )}
             </Button>
         </form>
