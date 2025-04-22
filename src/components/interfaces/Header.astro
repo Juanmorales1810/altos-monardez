@@ -1,7 +1,6 @@
 ---
 import { Phone } from "lucide-react";
 import { SheetMenu } from "../sheet-menu";
-import { Button } from "../ui/button";
 
 const routes = [
     { name: "Home", href: "/#hero" },
@@ -17,13 +16,13 @@ const routes = [
         <div class="flex h-16 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
                 <a class="block" href="/">
-                    <span class="text-2xl font-bold">Altos de Monardez</span>
+                    <span class="sr-only">Home</span>
 
-                    <!-- <img
-                        src="/logo.png"
+                    <img
+                        src="/black-hires.avif"
                         alt="Logo de Oakland Services"
-                        class="h-12"
-                    /> -->
+                        class="h-28 w-auto rounded-full object-cover md:block"
+                    />
                 </a>
             </div>
 
@@ -46,17 +45,22 @@ const routes = [
             <div class="flex items-center gap-4">
                 <div class="sm:flex sm:gap-4">
                     <a
-                        class="inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium text-white border [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none hover:bg-black hover:border-black hover:text-[#f0ba56] transition duration-500"
+                        class="inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 text-sm font-medium text-white bg-green-600 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-blue-50 transition-colors duration-200 ease-in-out hover:bg-green-700 active:bg-green-800"
                         target="_blank"
                         href="https://api.whatsapp.com/send?phone=56997364529&text=Hola%20quiero%20hacer%20una%20reserva.%20Que%20dias%20tenes%20disponibles%3F"
                     >
-                        Consulte ahora
+                        WhatsApp
                         <Phone className="ml-2 h-4 w-4" />
                     </a>
                 </div>
 
                 <div class="block md:hidden">
-                    <SheetMenu client:visible />
+                    <SheetMenu
+                        client:visible
+                        routes={routes}
+                        title="Altos de Monardez"
+                        description="Haz tu consulta en menos de un minuto. Rellena nuestro formulario y recibe una propuesta en menos de 24 horas"
+                    />
                 </div>
             </div>
         </div>
