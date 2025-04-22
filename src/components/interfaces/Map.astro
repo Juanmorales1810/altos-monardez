@@ -1,0 +1,44 @@
+---
+import ImageSubHero from "@/assets/images/map/map.avif";
+import Image from "astro/components/Image.astro";
+---
+
+<section class="py-32 px-2">
+    <div class="container mx-auto relative w-full h-[500px] bg-cover bg-center">
+        <div
+            class="absolute z-0 inset-0 bg-gradient-to-r from-amber-100 via-red-200 to-teal-100 opacity-50 blur-2xl"
+        >
+        </div>
+        <div
+            class="absolute z-10 inset-0 rounded-lg border border-border overflow-hidden"
+        >
+            <div class="absolute inset-0 bg-zinc-800 opacity-80"></div>
+            <Image
+                src={ImageSubHero}
+                alt="Subhero Image"
+                class="w-full h-[500px] object-cover object-center"
+            />
+        </div>
+        <div
+            class="relative z-30 h-full flex flex-col items-center justify-center text-center px-4 md:px-8 max-w-4xl mx-auto"
+        >
+            <h2 class="text-4xl md:text-4xl font-bold text-white mb-4">
+                ¿Dónde estamos?
+            </h2>
+            <p class="text-white font-bold text-xl mb-4">
+                Altos de Monardez - Quebrada de Monardez, La Serena
+            </p>
+            <p class="text-white font-semibold text-lg mb-8">
+                Estamos ubicados a solo 8 km del centro de La Serena, camino al
+                Valle de Elqui. Un lugar rodeado de naturaleza y tranquilidad.
+                Perfecto para tu evento.
+            </p>
+            <a
+                href="https://www.google.com.ar/maps/place/Altos+de+Monardez+Eventos+Ltda./@-29.929164,-71.1756793,17z/data=!3m1!4b1!4m6!3m5!1s0x969034df6adc78b1:0xfcffe50c529616a!8m2!3d-29.9291687!4d-71.1731044!16s%2Fg%2F11bwgw4t40?hl=es&entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
+                class="px-6 py-3 bg-amber-700 hover:bg-amber-800 text-white font-medium rounded-md transition-colors duration-300"
+            >
+                Visitanos en Google Maps
+            </a>
+        </div>
+    </div>
+</section>
