@@ -1,17 +1,18 @@
 ---
+import {
+    ArrowDownRightIcon,
+    ArrowUpRight,
+    MessageCircleHeart,
+} from "lucide-react";
 import { ParallaxCarousel } from "../Gallery";
+import { Button } from "../ui/button";
 ---
 
 <section class="py-32">
     <div class="container mx-auto px-2">
         <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
-            <div class="flex justify-end">
+            <div class="flex md:justify-end">
                 <ParallaxCarousel client:idle />
-                <!-- <img
-                    src="/images/block/placeholder-1.svg"
-                    alt="placeholder hero"
-                    class="max-h-[600px] w-full rounded-md object-cover lg:max-h-[800px]"
-                /> -->
             </div>
             <div
                 class="flex flex-col items-center text-center lg:max-w-3xl lg:items-start lg:text-left"
@@ -20,22 +21,9 @@ import { ParallaxCarousel } from "../Gallery";
                     data-slot="badge"
                     class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90"
                 >
-                    New Release
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-down-right ml-2 size-4"
-                        ><path d="m7 7 10 10"></path><path d="M17 7v10H7"
-                        ></path></svg
-                    ></span
-                >
+                    Galería de Fotos
+                    <ArrowDownRightIcon className="ml-2 size-4" />
+                </span>
                 <h1 class="my-6 text-4xl font-bold text-pretty md:text-5xl">
                     Galería de Eventos Realizados
                 </h1>
@@ -47,32 +35,16 @@ import { ParallaxCarousel } from "../Gallery";
                 <div
                     class="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start"
                 >
-                    <button
-                        data-slot="button"
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto"
-                    >
-                        Primary Button
-                    </button>
-                    <button
-                        data-slot="button"
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto"
-                    >
-                        Secondary Button
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-arrow-down-right size-4"
-                            ><path d="m7 7 10 10"></path><path d="M17 7v10H7"
-                            ></path></svg
-                        >
-                    </button>
+                    <Button>
+                        Contacta con Nosotros
+                        <MessageCircleHeart className="ml-2 size-5" />
+                    </Button>
+                    <Button variant="secondary" className="group">
+                        Contacta con Nosotros
+                        <ArrowUpRight
+                            className="size-5 group-hover:translate-x-1 transition-transform duration-300 "
+                        />
+                    </Button>
                 </div>
             </div>
         </div>
