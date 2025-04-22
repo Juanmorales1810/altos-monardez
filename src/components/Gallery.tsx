@@ -11,22 +11,50 @@ import { cn } from "@/lib/utils";
 
 // Definimos un array de imágenes de ejemplo
 const images = [
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
+    "/images/gallery/gallery-0.webp",
+    "/images/gallery/gallery-1.webp",
+    "/images/gallery/gallery-2.webp",
+    "/images/gallery/gallery-3.webp",
+    "/images/gallery/gallery-4.webp",
+    "/images/gallery/gallery-5.webp",
+    "/images/gallery/gallery-6.webp",
+    "/images/gallery/gallery-7.webp",
+    "/images/gallery/gallery-8.webp",
+    "/images/gallery/gallery-9.webp",
+    "/images/gallery/gallery-10.webp",
+    "/images/gallery/gallery-11.webp",
+    "/images/gallery/gallery-12.webp",
+    "/images/gallery/gallery-13.webp",
+    "/images/gallery/gallery-14.webp",
+    "/images/gallery/gallery-15.webp",
+    "/images/gallery/gallery-16.webp",
+    "/images/gallery/gallery-17.webp",
+    "/images/gallery/gallery-18.webp",
+    "/images/gallery/gallery-19.webp",
+    "/images/gallery/gallery-20.webp",
+    "/images/gallery/gallery-21.webp",
+    "/images/gallery/gallery-22.webp",
+    "/images/gallery/gallery-23.webp",
+    "/images/gallery/gallery-24.webp",
+    "/images/gallery/gallery-25.webp",
+    "/images/gallery/gallery-26.webp",
+    "/images/gallery/gallery-27.webp",
+    "/images/gallery/gallery-28.webp",
+    "/images/gallery/gallery-29.webp",
+    "/images/gallery/gallery-30.webp",
+    "/images/gallery/gallery-31.webp",
+    "/images/gallery/gallery-32.webp",
+    "/images/gallery/gallery-33.webp",
+    "/images/gallery/gallery-34.webp",
+    "/images/gallery/gallery-35.webp",
+    "/images/gallery/gallery-36.webp",
+    "/images/gallery/gallery-37.webp",
+    "/images/gallery/gallery-38.webp",
+    "/images/gallery/gallery-39.webp",
+    "/images/gallery/gallery-40.webp",
+    "/images/gallery/gallery-41.webp",
+    "/images/gallery/gallery-42.webp",
+    "/images/gallery/gallery-43.webp",
 ];
 
 export function ParallaxCarousel() {
@@ -53,12 +81,6 @@ export function ParallaxCarousel() {
         mainApi.on("select", handleMainSelect);
         mainApi.on("scroll", () => {
             if (!mainApi) return;
-            const engine = mainApi.internalEngine();
-            const scrollProgress = mainApi.scrollProgress();
-            const styles = engine.slideIndexes.map((index: number) => {
-                const distance = (scrollProgress - index) * 100;
-                return Math.max(Math.min(distance, 100), -100);
-            });
         });
 
         return () => {
@@ -67,30 +89,34 @@ export function ParallaxCarousel() {
     }, [mainApi, handleMainSelect]);
 
     return (
-        <div className="w-full max-w-5xl mx-auto space-y-4">
+        <div className="w-full space-y-4">
             <Carousel
                 setApi={setMainApi}
                 opts={{
                     loop: true,
                 }}
-                className="w-full"
+                className="max-sm:w-[calc(100vw-16px)] h-[414px] md:w-full sm:h-auto"
             >
                 <CarouselContent>
                     {images.map((src, index) => (
                         <CarouselItem key={index}>
                             <img
                                 src={src || "/placeholder.svg"}
-                                alt={`Slide ${index + 1}`}
-                                className="max-h-[600px] w-full rounded-md object-cover"
+                                alt={`Fotos de eventos ${index + 1}`}
+                                width={720}
+                                height={600}
+                                loading="lazy"
+                                decoding="async"
+                                className="h-[400px] w-full max-h-[600px] rounded-md object-cover"
                             />
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="hidden lg:block" />
-                <CarouselNext className="hidden lg:block" />
+                <CarouselPrevious className="hidden text-black left-2 lg:flex" />
+                <CarouselNext className="hidden text-black right-2 lg:flex" />
             </Carousel>
 
-            <div className="relative">
+            <div className="relative w-full sm:w-full">
                 <Carousel
                     setApi={setThumbApi}
                     opts={{
@@ -103,7 +129,7 @@ export function ParallaxCarousel() {
                         {images.map((src, index) => (
                             <CarouselItem
                                 key={index}
-                                className="pl-2 basis-1/5 cursor-pointer"
+                                className="pl-2 basis-1/5 cursor-pointer "
                             >
                                 <div
                                     className={cn(
@@ -116,8 +142,12 @@ export function ParallaxCarousel() {
                                 >
                                     <img
                                         src={src || "/placeholder.svg"}
-                                        alt={`Thumbnail ${index + 1}`}
-                                        className="object-cover rounded-sm"
+                                        alt={`Fotos de eventos - ${index + 1}`}
+                                        width={138}
+                                        height={115}
+                                        loading="lazy"
+                                        decoding="async"
+                                        className="object-cover rounded-sm md:w-full md:h-auto"
                                     />
                                 </div>
                             </CarouselItem>
