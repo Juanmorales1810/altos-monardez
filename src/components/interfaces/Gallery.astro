@@ -8,7 +8,7 @@ import { ParallaxCarousel } from "../Gallery";
 import { Button } from "../ui/button";
 ---
 
-<section class="py-32">
+<section id="Galeria" class="py-32">
     <div class="container mx-auto px-2">
         <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
             <div class="flex md:justify-end">
@@ -38,14 +38,28 @@ import { Button } from "../ui/button";
                     <Button
                         className="bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-md transition-colors duration-300"
                     >
-                        Contacta con Nosotros
-                        <MessageCircleHeart className="ml-2 size-5" />
+                        <a
+                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Que%20dias%20tenes%20disponibles%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2"
+                        >
+                            Contacta con Nosotros
+                            <MessageCircleHeart className="ml-2 size-5" />
+                        </a>
                     </Button>
                     <Button variant="secondary" className="group">
-                        Contacta con Nosotros
-                        <ArrowUpRight
-                            className="size-5 group-hover:translate-x-1 transition-transform duration-300 "
-                        />
+                        <a
+                            href="tel:56969175107"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2"
+                        >
+                            También puedes llamarnos
+                            <ArrowUpRight
+                                className="size-5 group-hover:translate-x-1 transition-transform duration-300 "
+                            />
+                        </a>
                     </Button>
                 </div>
             </div>
