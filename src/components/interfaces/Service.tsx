@@ -21,7 +21,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function DigitalExperienceSection() {
     return (
-        <section className="py-32">
+        <section id="Servicio" className="py-32">
             <div className="relative container mx-auto">
                 <div className="absolute bottom-auto -z-10 left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[60%] translate-y-[25%] rounded-full bg-[rgb(63,118,235)] opacity-50 blur-[80px]"></div>
 
@@ -118,14 +118,20 @@ export default function DigitalExperienceSection() {
                                         que tu evento empresarial sea un éxito.
                                     </p>
                                     <Button
+                                        asChild
                                         variant="outline"
                                         className="mt-8 gap-1.5 text-black"
                                     >
-                                        Conocer más
-                                        <span className="hidden md:inline">
-                                            sobre nuestros servicios
-                                        </span>
-                                        <ArrowRight className="w-4" />
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Eventos%20de%20Empresas%20y%20Celebraciones%20Corporativas"
+                                            target="_blank"
+                                        >
+                                            Conocer más
+                                            <span className="hidden md:inline">
+                                                sobre nuestros servicios
+                                            </span>
+                                            <ArrowRight className="w-4" />
+                                        </a>
                                     </Button>
                                 </div>
                                 <img
@@ -188,14 +194,20 @@ export default function DigitalExperienceSection() {
                                         recuerde por siempre.
                                     </p>
                                     <Button
+                                        asChild
                                         variant="outline"
                                         className="mt-8 gap-1.5 text-black"
                                     >
-                                        Conocer más
-                                        <span className="hidden md:inline">
-                                            sobre nuestros servicios
-                                        </span>
-                                        <ArrowRight className="w-4" />
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Licenciaturas%20y%20Fiestas%20Escolares"
+                                            target="_blank"
+                                        >
+                                            Conocer más
+                                            <span className="hidden md:inline">
+                                                sobre nuestros servicios
+                                            </span>
+                                            <ArrowRight className="w-4" />
+                                        </a>
                                     </Button>
                                 </div>
                                 <img
@@ -257,14 +269,20 @@ export default function DigitalExperienceSection() {
                                         necesidades.
                                     </p>
                                     <Button
+                                        asChild
                                         variant="outline"
                                         className="mt-8 gap-1.5 text-black"
                                     >
-                                        Conocer más
-                                        <span className="hidden md:inline">
-                                            sobre nuestros servicios
-                                        </span>
-                                        <ArrowRight className="w-4" />
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Arriendo%20de%20implementación"
+                                            target="_blank"
+                                        >
+                                            Conocer más
+                                            <span className="hidden md:inline">
+                                                sobre nuestros servicios
+                                            </span>
+                                            <ArrowRight className="w-4" />
+                                        </a>
                                     </Button>
                                 </div>
                                 <img
@@ -321,14 +339,20 @@ export default function DigitalExperienceSection() {
                                         que tu evento empresarial sea un éxito.
                                     </p>
                                     <Button
+                                        asChild
                                         variant="outline"
                                         className="mt-8 gap-1.5 text-black"
                                     >
-                                        Conocer más
-                                        <span className="hidden md:inline">
-                                            sobre nuestros servicios
-                                        </span>
-                                        <ArrowRight className="w-4" />
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Producción%20técnica%20y%20audiovisual"
+                                            target="_blank"
+                                        >
+                                            Conocer más
+                                            <span className="hidden md:inline">
+                                                sobre nuestros servicios
+                                            </span>
+                                            <ArrowRight className="w-4" />
+                                        </a>
                                     </Button>
                                 </div>
                                 <img
