@@ -1,6 +1,25 @@
 ---
 import Footer from "@/components/interfaces/Footer.astro";
 import Header from "@/components/interfaces/Header.astro";
+import { ClientRouter } from "astro:transitions";
+import SEO from "@/components/interfaces/SEO.astro";
+interface Preload {
+    as: string;
+    href: string;
+    type: string;
+    rel?: "preload" | "prefetch";
+    crossorigin?: string;
+}
+
+interface Props {
+    title: string;
+    description: string;
+    preload?: Array<Preload>;
+    canonical?: string;
+    image?: string;
+}
+
+const { title, description, preload, canonical, image } = Astro.props;
 
 import "@/styles/global.css";
 ---
@@ -8,11 +27,14 @@ import "@/styles/global.css";
 <!doctype html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Altos de Monardez - Centro de Eventos en La Serena</title>
+        <SEO
+            canonical={canonical}
+            description={description}
+            image={image}
+            preload={preload}
+            title={title}
+        />
+        <ClientRouter />
     </head>
     <body class="relative -z-30">
         <Header />
