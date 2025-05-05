@@ -7,6 +7,7 @@ import Gallery from "@/components/interfaces/Gallery.astro";
 import Testimonial from "@/components/interfaces/Testimonial.astro";
 import Contact from "@/components/interfaces/Contact.astro";
 import Map from "@/components/interfaces/Map.astro";
+import Subgallery from "@/components/interfaces/Subgallery.astro";
 ---
 
 <Layout
@@ -14,6 +15,7 @@ import Map from "@/components/interfaces/Map.astro";
     description="Altos de Monardez es un centro de eventos exclusivo ubicado a solo 8 km del centro de La Serena, camino al Valle de Elqui. Un espacio diseñado para que tu evento sea más que una reunión: una experiencia inolvidable."
 >
     <Hero />
+    <Subgallery />
     <Subhero />
     <Service client:load />
     <Gallery />
