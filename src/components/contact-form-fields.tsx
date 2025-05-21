@@ -159,13 +159,13 @@ export default function ContactFormFields() {
                         <SelectValue placeholder="Selecciona un tipo de evento" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value="wedding">Wedding</SelectItem>
-                        <SelectItem value="corporate">
-                            Corporate Event
+                        <SelectItem value="matrimonio">Matrimonios</SelectItem>
+                        <SelectItem value="graduaciones">
+                            Graduaciones
                         </SelectItem>
-                        <SelectItem value="birthday">Birthday Party</SelectItem>
-                        <SelectItem value="conference">Conference</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="cumpleanos">Cumpleaños</SelectItem>
+                        <SelectItem value="empresas">Empresas</SelectItem>
+                        <SelectItem value="otro">Otro</SelectItem>
                     </SelectContent>
                 </Select>
                 {errors.eventType && (
