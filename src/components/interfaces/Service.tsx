@@ -21,7 +21,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function DigitalExperienceSection() {
     return (
-        <section id="Servicio" className="py-32">
+        <section id="Servicio" className="py-12 md:py-32">
             <div className="relative container mx-auto">
                 <div className="absolute bottom-auto -z-10 left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[60%] translate-y-[25%] rounded-full bg-[rgb(63,118,235)] opacity-50 blur-[80px]"></div>
 
@@ -378,7 +378,7 @@ export default function DigitalExperienceSection() {
                             className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
-                                <div className="flex flex-col items-start mb-auto mt-10">
+                                <div className="flex flex-col items-start mb-auto md:mt-10">
                                     <h3 className="mb-4 text-2xl font-semibold lg:text-4xl">
                                         Otros Eventos
                                     </h3>
@@ -436,7 +436,7 @@ export default function DigitalExperienceSection() {
                                 </div>
                                 <img
                                     alt="Foto de Eventos de Empresas y Celebraciones Corporativas"
-                                    className="order-first max-h-[600px] w-full rounded-lg object-cover md:order-last"
+                                    className="order-first max-h-[400px] w-full rounded-lg object-cover object-center md:order-last md:max-h-[600px]"
                                     src="/images/service/Aniversario ADM1.avif"
                                     width={500}
                                     height={500}
