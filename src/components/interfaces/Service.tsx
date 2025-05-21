@@ -43,73 +43,71 @@ export default function DigitalExperienceSection() {
                     >
                         <TabsList className="bg-muted/45 sticky z-50 top-20 backdrop-blur-3xl text-muted-foreground w-fit items-center justify-center rounded-lg flex h-auto gap-x-1 p-1 md:p-2 md:gap-x-2">
                             <TabsTrigger
+                                value="matrimonios"
+                                className="text-xs hover:bg-white md:text-base px-1 md:px-2"
+                            >
+                                Matrimonios
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="graduaciones"
+                                className="text-xs hover:bg-white md:text-base px-1"
+                            >
+                                Graduaciones
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="cumpleaños"
+                                className="text-xs hover:bg-white md:text-base px-1"
+                            >
+                                Cumpleaños
+                            </TabsTrigger>
+                            <TabsTrigger
                                 value="empresas"
-                                className="text-sm hover:bg-white md:text-base"
+                                className="text-xs hover:bg-white md:text-base px-1"
                             >
                                 Empresas
                             </TabsTrigger>
                             <TabsTrigger
-                                value="licenciaturas"
-                                className="text-sm hover:bg-white md:text-base"
+                                value="otros"
+                                className="text-xs hover:bg-white md:text-base px-1"
                             >
-                                Licenciaturas
-                            </TabsTrigger>
-                            <TabsTrigger
-                                value="particular"
-                                className="text-sm hover:bg-white md:text-base"
-                            >
-                                Particular
-                            </TabsTrigger>
-                            <TabsTrigger
-                                value="produccion"
-                                className="text-sm hover:bg-white md:text-base"
-                            >
-                                Producción
+                                Otros
                             </TabsTrigger>
                         </TabsList>
 
                         <TabsContent
-                            value="empresas"
+                            value="matrimonios"
                             className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
-                                    <h2 className="mb-4 text-2xl font-semibold lg:text-4xl">
-                                        Eventos de Empresas y Celebraciones
-                                        Corporativas
-                                    </h2>
+                                    <h3 className="mb-4 text-2xl font-semibold lg:text-4xl">
+                                        Matrimonios y Celebraciones
+                                    </h3>
                                     <p className="text-zinc-300 lg:text-xl">
-                                        Conecta con tu equipo en un espacio que
-                                        inspira productividad y confianza.
-                                        Nuestro salón se adapta a todas las
-                                        necesidades corporativas. Ya sea para
-                                        una jornada formal o una celebración,
-                                        contarás con:
+                                        Nuestro Objetivo es que tu matrimonio
+                                        sea un momento único y especial, para
+                                        eso contamos con la colaboración de los
+                                        mejores profesionales que harán que tu
+                                        boda sea inolvidable.
                                     </p>
                                     <ul className="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
                                         <li className="flex items-center gap-2">
-                                            <Projector className="w-6" />
+                                            <Headphones className="w-6" />
                                             <span className="font-medium">
-                                                Proyector multimedia
+                                                DJ y sonido ambiental
                                             </span>
                                         </li>
                                         <li className="flex items-center gap-2">
-                                            <Volume2 className="w-6" />
+                                            <Lamp className="w-6" />
                                             <span className="font-medium">
-                                                Amplificación de sonido
+                                                Iluminación decorativa
                                             </span>
                                         </li>
                                         <li className="flex items-center gap-2">
-                                            <Croissant className="w-6" />
+                                            <Clapperboard className="w-6" />
                                             <span className="font-medium">
-                                                Servicio de coffee break o
-                                                banquetería
-                                            </span>
-                                        </li>
-                                        <li className="flex items-center gap-2">
-                                            <Car className="w-6" />
-                                            <span className="font-medium">
-                                                Estacionamiento privado y seguro
+                                                Pantallas y proyección
+                                                multimedia
                                             </span>
                                         </li>
                                     </ul>
@@ -123,7 +121,7 @@ export default function DigitalExperienceSection() {
                                         className="mt-8 gap-1.5 text-black"
                                     >
                                         <a
-                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Eventos%20de%20Empresas%20y%20Celebraciones%20Corporativas"
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Producción%20técnica%20y%20audiovisual"
                                             target="_blank"
                                         >
                                             Conocer más
@@ -135,9 +133,9 @@ export default function DigitalExperienceSection() {
                                     </Button>
                                 </div>
                                 <img
-                                    alt="Foto de Eventos de Empresas y Celebraciones Corporativas"
+                                    alt="Foto de Producción técnica y audiovisual"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/images/service/Fotografías Oficiales-214.avif"
+                                    src="/images/service/PORTADA PRINCIPAL (1).avif"
                                     width={610}
                                     height={400}
                                     decoding="async"
@@ -147,20 +145,20 @@ export default function DigitalExperienceSection() {
                         </TabsContent>
 
                         <TabsContent
-                            value="licenciaturas"
+                            value="graduaciones"
                             className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
-                                    <h2 className="mb-4 text-2xl font-semibold lg:text-4xl">
-                                        Licenciaturas y Fiestas Escolares
-                                    </h2>
+                                    <h3 className="mb-4 text-2xl font-semibold lg:text-4xl">
+                                        Graduaciones y Fiestas Escolares
+                                    </h3>
                                     <p className="text-zinc-300 lg:text-xl">
-                                        Espacios pensados para jóvenes,
-                                        apoderados y comunidad educativa.
-                                        Ofrecemos el escenario ideal para
-                                        ceremonias de licenciatura y
-                                        celebraciones escolares:
+                                        Celebra tu graduación con estilo y sin
+                                        preocupaciones, sea Octavo básico o tu
+                                        salida de cuarto medio te ofrecemos todo
+                                        lo que necesitas para un evento perfecto
+                                        e inolvidable.
                                     </p>
                                     <ul className="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
                                         <li className="flex items-center gap-2">
@@ -223,19 +221,21 @@ export default function DigitalExperienceSection() {
                         </TabsContent>
 
                         <TabsContent
-                            value="particular"
+                            value="cumpleaños"
                             className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
-                                    <h2 className="mb-4 text-2xl font-semibold lg:text-4xl">
-                                        Arriendo de implementación
-                                    </h2>
+                                    <h3 className="mb-4 text-2xl font-semibold lg:text-4xl">
+                                        Cumpleaños
+                                    </h3>
                                     <p className="text-zinc-300 lg:text-xl">
-                                        Mucho más que un espacio: entregamos
-                                        soluciones completas para tu evento . Ya
-                                        sea un evento formal o una celebración,
-                                        contamos con un salón equipado con:
+                                        Piensas en celebrar tu cumpleaños o el
+                                        de tu hijo, contamos con las
+                                        instalaciones necesarias para que todos
+                                        los miembros de tu familia y amigos
+                                        disfruten como corresponde en ese día
+                                        tan especial.
                                     </p>
                                     <ul className="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
                                         <li className="flex items-center gap-2">
@@ -298,39 +298,46 @@ export default function DigitalExperienceSection() {
                         </TabsContent>
 
                         <TabsContent
-                            value="produccion"
+                            value="empresas"
                             className="flex-1 outline-none max-w-screen-xl px-2"
                         >
                             <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
                                 <div>
-                                    <h2 className="mb-4 text-2xl font-semibold lg:text-4xl">
-                                        Producción técnica y audiovisual
-                                    </h2>
+                                    <h3 className="mb-4 text-2xl font-semibold lg:text-4xl">
+                                        Eventos de Empresas y Celebraciones
+                                        Corporativas
+                                    </h3>
                                     <p className="text-zinc-300 lg:text-xl">
-                                        Ofrecemos un servicio integral de
-                                        producción técnica y audiovisual para
-                                        eventos. Nuestro equipo de expertos se
-                                        encargará de cada detalle, asegurando
-                                        que tu evento sea un éxito rotundo:
+                                        Nuestro Objetivo es que tu matrimonio
+                                        sea un momento único y especial, para
+                                        eso contamos con la colaboración de los
+                                        mejores profesionales que harán que tu
+                                        boda sea inolvidable.
                                     </p>
                                     <ul className="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
                                         <li className="flex items-center gap-2">
-                                            <Headphones className="w-6" />
+                                            <Projector className="w-6" />
                                             <span className="font-medium">
-                                                DJ y sonido ambiental
+                                                Proyector multimedia
                                             </span>
                                         </li>
                                         <li className="flex items-center gap-2">
-                                            <Lamp className="w-6" />
+                                            <Volume2 className="w-6" />
                                             <span className="font-medium">
-                                                Iluminación decorativa
+                                                Amplificación de sonido
                                             </span>
                                         </li>
                                         <li className="flex items-center gap-2">
-                                            <Clapperboard className="w-6" />
+                                            <Croissant className="w-6" />
                                             <span className="font-medium">
-                                                Pantallas y proyección
-                                                multimedia
+                                                Servicio de coffee break o
+                                                banquetería
+                                            </span>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <Car className="w-6" />
+                                            <span className="font-medium">
+                                                Estacionamiento privado y seguro
                                             </span>
                                         </li>
                                     </ul>
@@ -344,7 +351,7 @@ export default function DigitalExperienceSection() {
                                         className="mt-8 gap-1.5 text-black"
                                     >
                                         <a
-                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Producción%20técnica%20y%20audiovisual"
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Eventos%20de%20Empresas%20y%20Celebraciones%20Corporativas"
                                             target="_blank"
                                         >
                                             Conocer más
@@ -356,11 +363,83 @@ export default function DigitalExperienceSection() {
                                     </Button>
                                 </div>
                                 <img
-                                    alt="Foto de Producción técnica y audiovisual"
+                                    alt="Foto de Eventos de Empresas y Celebraciones Corporativas"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/images/service/PORTADA PRINCIPAL (1).avif"
+                                    src="/images/service/Fotografías Oficiales-214.avif"
                                     width={610}
                                     height={400}
+                                    decoding="async"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </TabsContent>
+                        <TabsContent
+                            value="otros"
+                            className="flex-1 outline-none max-w-screen-xl px-2"
+                        >
+                            <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+                                <div className="flex flex-col items-start mb-auto mt-10">
+                                    <h3 className="mb-4 text-2xl font-semibold lg:text-4xl">
+                                        Otros Eventos
+                                    </h3>
+                                    <p className="text-zinc-300 lg:text-xl">
+                                        ¿Tienes una idea de evento?, llámanos o
+                                        escríbenos para hacer tu idea realidad.
+                                    </p>
+                                    {/* <ul className="mt-8 grid grid-cols-1 gap-2 lg:grid-cols-2">
+                                        <li className="flex items-center gap-2">
+                                            <Projector className="w-6" />
+                                            <span className="font-medium">
+                                                Proyector multimedia
+                                            </span>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <Volume2 className="w-6" />
+                                            <span className="font-medium">
+                                                Amplificación de sonido
+                                            </span>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <Croissant className="w-6" />
+                                            <span className="font-medium">
+                                                Servicio de coffee break o
+                                                banquetería
+                                            </span>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <Car className="w-6" />
+                                            <span className="font-medium">
+                                                Estacionamiento privado y seguro
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <p className="mt-8 text-zinc-200 italic">
+                                        Un ambiente relajado y profesional para
+                                        que tu evento empresarial sea un éxito.
+                                    </p> */}
+                                    <Button
+                                        asChild
+                                        variant="outline"
+                                        className="mt-8 gap-1.5 text-black"
+                                    >
+                                        <a
+                                            href="https://api.whatsapp.com/send?phone=56969175107&text=Hola%20quiero%20hacer%20una%20reserva.%20Me%20interesa%20el%20servicio%20de%20Eventos%20de%20Empresas%20y%20Celebraciones%20Corporativas"
+                                            target="_blank"
+                                        >
+                                            Conocer más
+                                            <span className="hidden md:inline">
+                                                sobre nuestros servicios
+                                            </span>
+                                            <ArrowRight className="w-4" />
+                                        </a>
+                                    </Button>
+                                </div>
+                                <img
+                                    alt="Foto de Eventos de Empresas y Celebraciones Corporativas"
+                                    className="order-first max-h-[600px] w-full rounded-lg object-cover md:order-last"
+                                    src="/images/service/Aniversario ADM1.avif"
+                                    width={500}
+                                    height={500}
                                     decoding="async"
                                     loading="lazy"
                                 />
