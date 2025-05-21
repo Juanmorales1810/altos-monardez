@@ -436,7 +436,7 @@ export default function DigitalExperienceSection() {
                                 </div>
                                 <img
                                     alt="Foto de Eventos de Empresas y Celebraciones Corporativas"
-                                    className="order-first max-h-[400px] w-full rounded-lg object-cover object-center md:order-last md:max-h-[600px]"
+                                    className="order-first max-h-[400px] w-full rounded-lg object-contain bg-white py-2.5 md:order-last"
                                     src="/images/service/Aniversario ADM1.avif"
                                     width={500}
                                     height={500}
