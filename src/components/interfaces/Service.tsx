@@ -38,7 +38,7 @@ export default function DigitalExperienceSection() {
 
                 <div className="mt-12">
                     <Tabs
-                        defaultValue="empresas"
+                        defaultValue="matrimonios"
                         className="mx-auto flex w-fit flex-col items-center gap-8 md:gap-12"
                     >
                         <TabsList className="bg-muted/45 sticky z-50 top-20 backdrop-blur-3xl text-muted-foreground w-fit items-center justify-center rounded-lg flex h-auto gap-x-1 p-1 md:p-2 md:gap-x-2">
@@ -135,7 +135,7 @@ export default function DigitalExperienceSection() {
                                 <img
                                     alt="Foto de Producción técnica y audiovisual"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/images/service/PORTADA PRINCIPAL (1).avif"
+                                    src="/images/service/matrimonio-service.avif"
                                     width={610}
                                     height={400}
                                     decoding="async"
@@ -211,7 +211,7 @@ export default function DigitalExperienceSection() {
                                 <img
                                     alt="Foto de Licenciaturas y Fiestas Escolares"
                                     className="order-first max-h-[400px] w-full rounded-lg object-cover md:order-last"
-                                    src="/images/service/Fotos Oficiales-255.avif"
+                                    src="/images/service/graduaciones-service.avif"
                                     width={610}
                                     height={400}
                                     decoding="async"
