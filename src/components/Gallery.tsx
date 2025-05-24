@@ -11,8 +11,7 @@ import { cn } from "@/lib/utils";
 
 // Definimos un array de imágenes de ejemplo
 const images = [
-    "/images/gallery/gallery-0.webp",
-    "/images/gallery/gallery-1.webp",
+    "/images/gallery/gallery-44.webp",
     "/images/gallery/gallery-2.webp",
     "/images/gallery/gallery-3.webp",
     "/images/gallery/gallery-4.webp",
@@ -55,6 +54,13 @@ const images = [
     "/images/gallery/gallery-41.webp",
     "/images/gallery/gallery-42.webp",
     "/images/gallery/gallery-43.webp",
+    "/images/gallery/gallery-45.webp",
+    "/images/gallery/gallery-46.webp",
+    "/images/gallery/gallery-47.webp",
+    "/images/gallery/gallery-48.webp",
+    "/images/gallery/gallery-49.webp",
+    "/images/gallery/gallery-50.webp",
+    "/images/gallery/gallery-51.webp",
 ];
 
 export function ParallaxCarousel() {
