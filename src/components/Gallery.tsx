@@ -19,14 +19,14 @@ const images = [
     "/images/gallery/gallery-6.webp",
     "/images/gallery/gallery-7.webp",
     "/images/gallery/gallery-8.webp",
-    "/images/gallery/gallery-9.webp",
+    // "/images/gallery/gallery-9.webp",
     "/images/gallery/gallery-10.webp",
     "/images/gallery/gallery-11.webp",
     "/images/gallery/gallery-12.webp",
-    "/images/gallery/gallery-13.webp",
+    // "/images/gallery/gallery-13.webp",
     "/images/gallery/gallery-14.webp",
     "/images/gallery/gallery-15.webp",
-    "/images/gallery/gallery-16.webp",
+    // "/images/gallery/gallery-16.webp",
     "/images/gallery/gallery-17.webp",
     "/images/gallery/gallery-18.webp",
     "/images/gallery/gallery-19.webp",
@@ -41,7 +41,7 @@ const images = [
     "/images/gallery/gallery-28.webp",
     "/images/gallery/gallery-29.webp",
     "/images/gallery/gallery-30.webp",
-    "/images/gallery/gallery-31.webp",
+    // "/images/gallery/gallery-31.webp",
     "/images/gallery/gallery-32.webp",
     "/images/gallery/gallery-33.webp",
     "/images/gallery/gallery-34.webp",
@@ -153,7 +153,7 @@ export function ParallaxCarousel() {
                                         height={115}
                                         loading="lazy"
                                         decoding="async"
-                                        className="object-cover rounded-sm md:w-full md:h-auto"
+                                        className="object-cover rounded-sm md:w-full md:h-auto aspect-[3/2] "
                                     />
                                 </div>
                             </CarouselItem>
